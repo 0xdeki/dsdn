@@ -13,7 +13,7 @@ Setup:
 The program defines a GitLab access token with `GitLabAPI.setAccessToken`. GitLab access tokens can be generated [here](https://gitlab.com/-/profile/personal_access_tokens). Make sure the token has the "api" scope.
 
 1. A developer requests a repository to push their code to. The program uses `GitLabAPI.createSubgroup()` to create a subgroup inside a bigger, SDN-wide group on GitLab.
-2. The program uses `GitLab.addMemberToGroup()` to add the developer to the newly created subgroup. 
+2. The program uses `GitLab.addMemberToGroup()` to add the developer to the newly created subgroup, presumably with `Maintainer` access. 
 3. The developer creates a new project in their subgroup, and pushes their code to it.
 4. The developer requests their code to be compiled. This can either happen automatically or after an SDN maintainer has reviewed the code.
 5. After code review, or on-demand by developer, the repository is cloned by the program with `VCS.cleanCloneAuthedRepo()` (assuming the repository requires authentication, if not use `VCS.cleanCloneRepo()`)
