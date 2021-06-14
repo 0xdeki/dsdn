@@ -18,7 +18,7 @@ The program defines a GitLab access token with `GitLabAPI.setAccessToken`. GitLa
 4. The developer requests their code to be compiled. This can either happen automatically or after an SDN maintainer has reviewed the code.
 5. After code review, or on-demand by developer, the repository is cloned by the program with `VCS.cleanCloneAuthedRepo()` (assuming the repository requires authentication, if not use `VCS.cleanCloneRepo()`)
 6. The program compiles the repository code with `todo`.
-7. The code is distributed by the program to respective end-users.
+7. The code is further processed if necessary and distributed by the program to end-users.
 
 ## Features
 ### GitLab
