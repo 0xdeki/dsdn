@@ -3,7 +3,7 @@
 ## What is it?
 The purpose of software-defined networking (SDN) is, in simple terms, to centralize parts of the otherwise decentralized internet. 
 The primary use case of this library is to help serve java code to end-users from multiple independent developers through git and GitLab. 
-This library does not serve as an SDN in itself, but provides the tools to create one. 
+This library does not serve as an SDN controller in itself, but provides the tools to create one. 
 
 ## How do I use it?
 This library is meant to be used with GitLab as it provides tools that lets us fully automate the developer side of the process. 
