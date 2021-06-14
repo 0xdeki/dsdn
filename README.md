@@ -26,6 +26,7 @@ The program defines a GitLab access token with `GitLabAPI.setAccessToken`. GitLa
 * Get members of a group or project
 * Create subgroups (a subgroup is a group within a group)
 * Add members to groups and projects
+Note: a subgroup is effectively a group, (almost) all group-related API also works on subgroups.
 ### Git
 * Clone a repository to a directory over HTTP(S)
 
