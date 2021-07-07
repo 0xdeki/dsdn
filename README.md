@@ -10,14 +10,14 @@ This library is meant to be used with GitLab as it provides tools that lets us f
 Here is a quick overview of how this library is meant to be used:
 
 Setup:
-The program defines a GitLab access token with `GitLabAPI.setAccessToken`. GitLab access tokens can be generated [here](https://gitlab.com/-/profile/personal_access_tokens). Make sure the token has the "api" scope.
+The program defines a GitLab access token with `GitLabAPI.setAccessToken()`. GitLab access tokens can be generated [here](https://gitlab.com/-/profile/personal_access_tokens). Make sure the token has the "api" scope.
 
 1. A developer requests a repository to push their code to. The program uses `GitLabAPI.createSubgroup()` to create a subgroup inside a bigger, SDN-wide group on GitLab.
 2. The program uses `GitLab.addMemberToGroup()` to add the developer to the newly created subgroup, presumably with `Maintainer` access. 
 3. The developer creates a new project in their subgroup, and pushes their code to it.
 4. The developer requests their code to be compiled. This can either happen automatically or after an SDN maintainer has reviewed the code.
 5. After code review, or on-demand by developer, the repository is cloned by the program with `VCS.cleanCloneAuthedRepo()` (assuming the repository requires authentication, if not use `VCS.cleanCloneRepo()`)
-6. The program compiles the repository code with `todo`.
+6. The program compiles the repository code with `Compiler.compile()` and packages the compiled code with `Compiler.createJar()`.
 7. The code is further processed if necessary and distributed by the program to end-users.
 
 ## Features
