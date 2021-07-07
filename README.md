@@ -33,6 +33,9 @@ Note: a subgroup is effectively a group, (almost) all group-related API also wor
 ### Git
 * Clone a repository to a directory over HTTP(S)
 
+### Compiler
+* Compile java source code from a directory to .class files in another directory
+* Package .class files from a directory to .jar archive
+
 ## Todo
-* Compiler that compiles java code in a directory (to compile repositories)
 * More GitLab actions
