@@ -17,7 +17,8 @@ The program defines a GitLab access token with `GitLabAPI.setAccessToken()`. Git
 3. The developer creates a new project in their subgroup, and pushes their code to it.
 4. The developer requests their code to be compiled. This can either happen automatically or after an SDN maintainer has reviewed the code.
 5. After code review, or on-demand by developer, the repository is cloned by the program with `VCS.cleanCloneAuthedRepo()` (assuming the repository requires authentication, if not use `VCS.cleanCloneRepo()`)
-6. The program compiles the repository code with `Compiler.compile()` and packages the compiled code with `Compiler.createJar()`.
+6a. The program compiles the repository code with `Compiler.compile()` and packages the compiled code with `Compiler.createJar()`.
+6b. The program can alternatively compile the repository with `MavenWrapper.executeMavenCommand()`, if the repository is a maven project
 7. The code is further processed if necessary and distributed by the program to end-users.
 
 ## Features
@@ -36,6 +37,9 @@ Note: a subgroup is effectively a group, (almost) all group-related API also wor
 ### Compiler
 * Compile java source code from a directory to .class files in another directory
 * Package .class files from a directory to .jar archive
+
+### Maven
+* Supports any maven plugin (verify, clean, package, install) - useful for compilation
 
 ## Todo
 * More GitLab actions
