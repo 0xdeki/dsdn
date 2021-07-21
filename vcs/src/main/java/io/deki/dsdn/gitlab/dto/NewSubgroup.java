@@ -1,5 +1,6 @@
-package io.deki.dsdn.dto;
+package io.deki.dsdn.gitlab.dto;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,10 +12,12 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class NewGroup {
+public class NewSubgroup {
 
   private String name;
 
   private String path;
 
+  @SerializedName("parent_id")
+  private String parentId;
 }

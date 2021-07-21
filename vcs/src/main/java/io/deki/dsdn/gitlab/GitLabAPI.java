@@ -2,12 +2,12 @@ package io.deki.dsdn.gitlab;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import io.deki.dsdn.dto.AddMember;
-import io.deki.dsdn.dto.Group;
-import io.deki.dsdn.dto.Member;
-import io.deki.dsdn.dto.MemberAccessLevel;
-import io.deki.dsdn.dto.NewSubgroup;
-import io.deki.dsdn.dto.Project;
+import io.deki.dsdn.gitlab.dto.AddMember;
+import io.deki.dsdn.gitlab.dto.Group;
+import io.deki.dsdn.gitlab.dto.Member;
+import io.deki.dsdn.gitlab.dto.MemberAccessLevel;
+import io.deki.dsdn.gitlab.dto.NewSubgroup;
+import io.deki.dsdn.gitlab.dto.Project;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;

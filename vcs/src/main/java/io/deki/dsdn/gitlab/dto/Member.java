@@ -1,21 +1,25 @@
-package io.deki.dsdn.dto;
+package io.deki.dsdn.gitlab.dto;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
-public class AddMember {
+public class Member {
 
-  @SerializedName("user_id")
-  private String userId;
+  private int id;
+
+  private String username;
+
+  private String name;
+
+  private String state;
+
+  @SerializedName("web_url")
+  private String webUrl;
 
   @SerializedName("access_level")
   private int accessLevel;

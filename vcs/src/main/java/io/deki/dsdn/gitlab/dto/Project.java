@@ -1,4 +1,4 @@
-package io.deki.dsdn.dto;
+package io.deki.dsdn.gitlab.dto;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Getter;

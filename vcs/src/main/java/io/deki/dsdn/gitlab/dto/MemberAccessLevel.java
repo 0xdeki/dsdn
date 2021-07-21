@@ -1,4 +1,4 @@
-package io.deki.dsdn.dto;
+package io.deki.dsdn.gitlab.dto;
 
 public enum MemberAccessLevel {
 

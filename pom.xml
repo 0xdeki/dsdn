@@ -11,6 +11,7 @@
     <modules>
         <module>vcs</module>
         <module>compiler</module>
+        <module>dsdn</module>
     </modules>
 
     <properties>
